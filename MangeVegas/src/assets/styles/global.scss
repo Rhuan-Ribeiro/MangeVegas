@@ -1,0 +1,29 @@
+
+@import 'primeflex/primeflex.scss';
+@import './reset.scss';
+@import './variables.scss';
+
+$font-path: "../fonts/";
+
+@font-face {
+    font-family: 'BlenderProBook';
+    src: url($font-path + "BlenderPro-Book.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'BlenderProBold';
+    src: url($font-path + "BlenderPro-Bold.woff2") format('woff2');
+}
+
+#app {
+    font-family: 'BlenderProBook';
+    font-weight: normal;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neon-yellow);
+}
