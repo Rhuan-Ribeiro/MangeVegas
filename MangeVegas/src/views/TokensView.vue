@@ -9,5 +9,8 @@
 </template>
 
 <style scoped lang="scss">
-
+main {
+    height: 95vh;
+    width: 100vw;
+}
 </style>

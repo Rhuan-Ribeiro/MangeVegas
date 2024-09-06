@@ -22,6 +22,7 @@
         top: 0;
         padding: 10px 40px;
         width: 100%;
+        z-index: 1;
         
         nav {
             display: flex;
@@ -30,8 +31,8 @@
 
             
             ul {
-                background: rgba($color: #000000, $alpha: 0.6);
-                backdrop-filter: blur(10px);
+                background: rgba($color: #000000, $alpha: 0.5);
+                backdrop-filter: blur(3px);
                 border: 1px solid #fcee0a;
                 display: flex;
                 list-style: none;
@@ -69,10 +70,6 @@
                     background-color: #fcee0a;
                 }
             } 
-
-            &::after {
-                
-            }
         }
     }
     

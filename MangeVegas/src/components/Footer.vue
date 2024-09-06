@@ -52,7 +52,7 @@
         margin-left: 20px;
 
         i {
-        color: var(--neon-blue);
+        color: var(--neon-cyan);
         font-size: 1.75rem;
         }
       }
