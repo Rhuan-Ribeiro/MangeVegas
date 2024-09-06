@@ -1,6 +1,6 @@
 <template>
     <footer>
-      <img id="razor-bottom" decoding="async" src="./assets/images/razor-bottom.svg" alt="">
+      <img id="razor-bottom" decoding="async" src="/razor-bottom.svg" alt="">
       <div id="footer-content">
         <div id="footer-info">
           <div id="findme">
@@ -9,7 +9,7 @@
             <a href="https://linkedin.com/in/rhuan-ribeiro" target="_blank"><i class="pi pi-linkedin"></i></a>
             <a href="mailto:rhuan.augusto.ribeiro@gmail.com" target="_blank"><i class="pi pi-envelope"></i></a>
           </div>
-        <img src="../assets/images/rating.png" alt="">
+        <img src="/rating.png" alt="">
         </div>
         
         <div id="footer-copyright">

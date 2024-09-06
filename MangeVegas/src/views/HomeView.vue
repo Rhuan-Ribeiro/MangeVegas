@@ -9,5 +9,9 @@
 </template>
 
 <style scoped lang="scss">
-
+ main {
+  height: 100vh;
+  object-fit: cover;
+  background-image: url(/poster.jpg);
+ }
 </style>
