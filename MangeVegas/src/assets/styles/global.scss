@@ -15,6 +15,11 @@ $font-path: "../fonts/";
     src: url($font-path + "BlenderPro-Bold.woff2") format('woff2');
 }
 
+@font-face {
+    font-family: 'Refinery-25';
+    src: url($font-path + "Refinery-25.woff2") format('woff2');
+}
+
 #app {
     font-family: 'BlenderProBook';
     font-weight: normal;
