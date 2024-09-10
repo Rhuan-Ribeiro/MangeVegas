@@ -13,7 +13,7 @@
         </div>
         
         <div id="footer-copyright">
-          <a href="https://www.cdprojektred.com/" target="_blank" ><img id="cd-projekt" src="https://www.cyberpunk.net/build/images/CDProjektRed-White-e4ac7847.svg" alt=""></a>
+          <a href="https://www.cdprojektred.com/" target="_blank" ><img id="cd-projekt" src="/CDProjektRed.svg" alt=""></a>
           <span>&#169 2024 Rhuan Ribeiro. Todos os direitos reservados. Este site foi desenvolvido como um exercício acadêmico, inspirado no design do Cyberpunk 2077. Os elementos visuais e estilísticos utilizados são de propriedade da CD PROJEKT S.A., e os direitos relacionados ao Cyberpunk, Cyberpunk 2077 e seus logotipos são marcas registradas da CD PROJEKT S.A. nos EUA e/ou em outros países. O uso destes elementos é exclusivo para fins educacionais e não tem intenção comercial.</span> 
         </div>
       </div>
