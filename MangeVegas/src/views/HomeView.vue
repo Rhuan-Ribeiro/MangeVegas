@@ -62,7 +62,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 85%);
-    pointer-events: none; /* Garante que o pseudo-elemento não interfira nos eventos do mouse */
+    pointer-events: none;
     
   }
 }
@@ -137,35 +137,36 @@
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%;
     text-align: center;
     text-transform: uppercase;
+    line-height: 100%;
   }
 
   p {
+    max-width: 820px;
     font-size: 22px;
     font-style: normal;
-    line-height: 120%;
     font-family: BlenderProBook,sans-serif;
     font-weight: 400;
-    max-width: 820px;
+    line-height: 120%;
   }
   #separator-top {
+    width: 47.2916666667vw;
+    height: 28px;
+    margin-bottom: 10px;
     background-image: linear-gradient(90deg,#000 28px,#fcee0a 0,#fcee0a calc(50% - 14px),#000 calc(50% - 14px),#000 calc(50% + 14px),#fcee0a calc(50% + 14px),#fcee0a calc(100% - 28px),#000 calc(100% - 28px),#000),linear-gradient(90deg,#000 2px,#fcee0a 0,#fcee0a calc(50% - 1px),#000 calc(50% - 1px),#000 calc(50% + 1px),#fcee0a calc(50% + 1px),#fcee0a calc(100% - 2px),#000 calc(100% - 2px),#000);
     background-repeat: no-repeat;
     background-size: 100% 2px,100% 28px;
-    height: 28px;
-    margin-bottom: 10px;
-    width: 47.2916666667vw;
+    
   }
 
   #separator-bottom {
+    width: 47.2916666667vw;
+    height: 28px;
+    margin-top: 10px;
     background-image: linear-gradient(90deg,#000 2px,#fcee0a 0,#fcee0a calc(50% - 1px),#000 calc(50% - 1px),#000 calc(50% + 1px),#fcee0a calc(50% + 1px),#fcee0a calc(100% - 2px),#000 calc(100% - 2px),#000),linear-gradient(90deg,#000 28px,#fcee0a 0,#fcee0a calc(50% - 14px),#000 calc(50% - 14px),#000 calc(50% + 14px),#fcee0a calc(50% + 14px),#fcee0a calc(100% - 28px),#000 calc(100% - 28px),#000);
     background-repeat: no-repeat;
     background-size: 100% 26px,100% 28px;
-    height: 28px;
-    margin-top: 10px;
-    width: 47.2916666667vw;
   }
 
   img {

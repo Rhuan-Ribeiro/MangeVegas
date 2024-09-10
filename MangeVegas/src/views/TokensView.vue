@@ -31,68 +31,205 @@
         avalanche.value = currency;
     })
     .catch(error=>console.error(error));
+
+    const arrowLeft = '&#8592';
+    const arrowRight = '&#8594';
+
+    const arrow = ref();
+
+    const rotate = () => {
+        
+    };
 </script>
 
 <template>
     <main>
-        <h1>Tokens</h1>
-        <table>
-            <thead>
-                <tr>
-                <th scope="col">Moeda</th>
-                <th scope="col">Compra</th>
-                <th scope="col">Venda</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">Ethereum</th>
-                <td>R$ {{ ethereum.bid }}</td>
-                <td>R$ {{ ethereum.ask }}</td>
-                </tr>
-                <tr>
-                <th scope="row">Bitcoin</th>
-                <td>R$ {{ bitcoin.bid }}</td>
-                <td>R$ {{ bitcoin.bid }}</td>
-                </tr>
-                <tr>
-                <th scope="row">Solana</th>
-                <td>R$ {{ solana.bid }}</td>
-                <td>R$ {{ solana.bid }}</td>
-                </tr>
-                <tr>
-                <th scope="row">Avalanche</th>
-                <td>R$ {{ avalanche.bid }}</td>
-                <td>R$ {{ avalanche.bid }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <section id="crypto-prices">
+            <div id="trade-container" class="flex flex-column justify-content-between">
+                <h2 class="text-7xl">Trocar Tokens</h2>
+                <div class="flex flex-row justify-content-between align-items-center mb-4">
+
+                    <div class="flex flex-row justify-content-center align-items-center">
+                        <img src="/ethereum.svg" alt="Ethereum icon" class="h-6rem">
+                        <span class="ml-2 text-6xl">Ethereum</span>
+                    </div>
+
+                    <img src="/arrow.png" alt="" class="h-4rem m-4">
+
+                    <div class="flex flex-row justify-content-center align-items-center">
+                        <img src="/m.png" alt="MangeCoin icon" class="h-6rem">
+                        <span class="ml-2 text-6xl">MangeCoin</span>
+                    </div>
+                
+                </div>
+                <span>&#x26A0</span>
+                <button>Trocar</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                    <th scope="col">Moeda</th>
+                    <th scope="col">Compra</th>
+                    <th scope="col">Venda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row"><img src="/ethereum.svg" alt="ethereum icon" class="currency-icons"> <u>Ethereum</u></th>
+                    <td>$ {{ ethereum.bid }}</td>
+                    <td>$ {{ ethereum.ask }}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"><img src="/bitcoin.svg" alt="bitcoin icon" class="currency-icons"> Bitcoin</th>
+                    <td>$ {{ bitcoin.bid }}</td>
+                    <td>$ {{ bitcoin.bid }}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"><img src="/solana.svg" alt="solana icon" class="currency-icons"> Solana</th>
+                    <td>$ {{ solana.bid }}</td>
+                    <td>$ {{ solana.bid }}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"><img src="/avalanche.svg" alt="avalanche icon" class="currency-icons"> Avalanche</th>
+                    <td>$ {{ avalanche.bid }}</td>
+                    <td>$ {{ avalanche.bid }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="alert">
+            <div id="separator-top"></div>
+            <h2>Te damos boas vindas ao futuro sombrio</h2>
+            <p class="mb-4">Explore a atmosfera futurista que remete ao icônico mundo de Cyberpunk 2077. Descubra as histórias fascinantes e desafios emocionantes na vibrante e perigosa Night City, enquanto desfruta de uma experiência de cassino inovadora e totalmente tematizada.</p>
+            <div id="separator-bottom"></div>
+        </section>
+        
     </main>
 </template>
 
 <style scoped lang="scss">
-main {
-    height: 95vh;
-    width: 100vw;
-}
-table {
-    border-collapse: collapse;
-    border: 2px solid #DDD;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    background: rgba($color: #000000, $alpha: 0.2);
+#crypto-prices {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px 10px 88px 10px;
+    background-color: #000;
+    
 
-    thead {
-        background-color: #000;
+    #trade-container {
+        padding: 20px;
+        background-color: #222;
+        color: #FFF;
+        border-collapse: collapse;
+        border: 5px solid var(--neon-yellow);
+
+        h2 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        button {
+            border-image: url(https://www.cyberpunk.net/build/images/cp-btn-yellow-fd1ca428.svg) 0 20 fill;
+            color: var(--neon-yellow);
+
+            background-color: #222;
+
+            align-items: center;
+            border-style: solid;
+            border-width: 0 20px;
+            cursor: pointer;
+            display: inline-flex;
+            height: 48px;
+            justify-content: center;
+            min-width: 232px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-user-select: none;
+            user-select: none;
+
+            font-family: 'BlenderProBold',sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+        }
+    }
+    
+    table {
+        border-collapse: collapse;
+        border: 2px solid #DDD;
+
+        background: #222;
+
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+
+        thead {
+            background-color: #111;
+        }
+
+        tbody th {
+            border-right: 2px solid #DDD;
+
+            .currency-icons {
+                height: 1rem;
+                width: 1rem;
+            }
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #AAA;
+            padding: 10px 10px 10px 15px;
+            text-align: left;
+            color: #EEE;
+        }
+
         th {
+            font-weight: bold;
+            font-size: 1.8rem;
             color: #FFF;
+        }
+
+        td {
+            font-size: 1.5rem;
         }
     }
 
-    th,
-    td {
-        border-bottom: 1px solid rgba($color: #DDD, $alpha: 0.6);
-        padding: 12px 5px 12px 8px;
+    &::after {
+    background-image: url(/razor.svg);
+    height: 48px;
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+  }
+}
+
+#alert {
+    height: 200px;
+    background-color: var(--neon-yellow);
+
+    #separator-top {
+        width: 47.2916666667vw;
+        height: 28px;
+        margin-bottom: 10px;
+        background-image: linear-gradient(90deg,#000 28px,#fcee0a 0,#fcee0a calc(50% - 14px),#000 calc(50% - 14px),#000 calc(50% + 14px),#fcee0a calc(50% + 14px),#fcee0a calc(100% - 28px),#000 calc(100% - 28px),#000),linear-gradient(90deg,#000 2px,#fcee0a 0,#fcee0a calc(50% - 1px),#000 calc(50% - 1px),#000 calc(50% + 1px),#fcee0a calc(50% + 1px),#fcee0a calc(100% - 2px),#000 calc(100% - 2px),#000);
+        background-repeat: no-repeat;
+        background-size: 100% 2px,100% 28px;
+    }
+
+    #separator-bottom {
+        width: 47.2916666667vw;
+        height: 28px;
+        margin-top: 10px;
+        background-image: linear-gradient(90deg,#000 2px,#fcee0a 0,#fcee0a calc(50% - 1px),#000 calc(50% - 1px),#000 calc(50% + 1px),#fcee0a calc(50% + 1px),#fcee0a calc(100% - 2px),#000 calc(100% - 2px),#000),linear-gradient(90deg,#000 28px,#fcee0a 0,#fcee0a calc(50% - 14px),#000 calc(50% - 14px),#000 calc(50% + 14px),#fcee0a calc(50% + 14px),#fcee0a calc(100% - 28px),#000 calc(100% - 28px),#000);
+        background-repeat: no-repeat;
+        background-size: 100% 26px,100% 28px;
     }
 }
 </style>
