@@ -1,0 +1,20 @@
+{
+    "HEADER": {
+        "HOME": "Home",
+        "TOKENS": "Tokens",
+        "SLOTMACHINE": "Slot Machine"
+    },
+    "FOOTER": {
+        "FINDME": "Encontre-me em:",
+        "COPYRIGHT": "2024 Rhuan Ribeiro. Todos os direitos reservados. Este site foi desenvolvido como um exercício acadêmico, inspirado no design do Cyberpunk 2077. Os elementos visuais e estilísticos utilizados são de propriedade da CD PROJEKT S.A., e os direitos relacionados ao Cyberpunk, Cyberpunk 2077 e seus logotipos são marcas registradas da CD PROJEKT S.A. nos EUA e/ou em outros países. O uso destes elementos é exclusivo para fins educacionais e não tem intenção comercial."
+    },
+    "HOME": {
+        "TITLE": "Vicêncie a experiência definitiva de Cyberpunk 2077",
+        "MORENEWS": "Mais Notícias",
+        "WELCOME": "Te damos boas vindas ao futuro sombrio",
+        "ABOUT": "Explore a atmosfera futurista que remete ao icônico mundo de Cyberpunk 2077. Descubra as histórias fascinantes e desafios emocionantes na vibrante e perigosa Night City, enquanto desfruta de uma experiência de cassino inovadora e totalmente tematizada.",
+        "THEME": "O Cassino da Distopia",
+        "EXERCISE": "Mergulhe no cassino imersivo inspirado no universo de Cyberpunk 2077, onde o futuro se encontra com o entretenimento de uma maneira única! Este exercício acadêmico, desenvolvido exclusivamente para fins educacionais,",
+        "WARNING": "não tem finalidade lucrativa."
+    }
+}

@@ -40,6 +40,7 @@
     const rotate = () => {
         
     };
+
 </script>
 
 <template>
@@ -54,7 +55,7 @@
                         <span class="ml-2 text-6xl">Ethereum</span>
                     </div>
 
-                    <img src="/arrow.png" alt="" class="h-4rem m-4">
+                    <img @click="rotate()" src="/arrow.png" alt="" class="h-4rem m-4">
 
                     <div class="flex flex-row justify-content-center align-items-center">
                         <img src="/m.png" alt="MangeCoin icon" class="h-6rem">
@@ -85,17 +86,17 @@
                     <tr>
                     <th scope="row"><img src="/bitcoin.svg" alt="bitcoin icon" class="currency-icons"> Bitcoin</th>
                     <td>$ {{ bitcoin.bid }}</td>
-                    <td>$ {{ bitcoin.bid }}</td>
+                    <td>$ {{ bitcoin.ask }}</td>
                     </tr>
                     <tr>
                     <th scope="row"><img src="/solana.svg" alt="solana icon" class="currency-icons"> Solana</th>
                     <td>$ {{ solana.bid }}</td>
-                    <td>$ {{ solana.bid }}</td>
+                    <td>$ {{ solana.ask }}</td>
                     </tr>
                     <tr>
                     <th scope="row"><img src="/avalanche.svg" alt="avalanche icon" class="currency-icons"> Avalanche</th>
                     <td>$ {{ avalanche.bid }}</td>
-                    <td>$ {{ avalanche.bid }}</td>
+                    <td>$ {{ avalanche.ask }}</td>
                     </tr>
                 </tbody>
             </table>

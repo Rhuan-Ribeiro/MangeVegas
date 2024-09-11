@@ -1,0 +1,20 @@
+{
+    "HEADER": {
+        "HOME": "Home",
+        "TOKENS": "Tokens",
+        "SLOTMACHINE": "Slot Machine"
+    },
+    "FOOTER": {
+        "FINDME": "Find me at:",
+        "COPYRIGHT": "2024 Rhuan Ribeiro. All rights reserved. This site was developed as an academic exercise, inspired by the design of Cyberpunk 2077. The visual and stylistic elements used are owned by CD PROJEKT S.A., and the rights related to Cyberpunk, Cyberpunk 2077, and its logos are trademarks of CD PROJEKT S.A. in the U.S. and/or other countries. The use of these elements is solely for educational purposes and has no commercial intent."
+    },
+    "HOME": {
+        "TITLE": "Experience the Ultimate Cyberpunk 2077 Experience",
+        "MORENEWS": "More News",
+        "WELCOME": "Welcome to the Dark Future",
+        "ABOUT": "Explore the futuristic atmosphere reminiscent of the iconic world of Cyberpunk 2077. Discover the fascinating stories and exciting challenges in the vibrant and dangerous Night City, while enjoying an innovative and fully themed casino experience.",
+        "THEME": "The Dystopian Casino",
+        "EXERCISE": "Dive into the immersive casino inspired by the Cyberpunk 2077 universe, where the future meets entertainment in a unique way! This academic exercise, developed exclusively for educational purposes,",
+        "WARNING": "is not for profit."
+    }
+}

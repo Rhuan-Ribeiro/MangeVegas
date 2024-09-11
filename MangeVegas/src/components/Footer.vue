@@ -4,7 +4,7 @@
       <div id="footer-content">
         <div id="footer-info">
           <div id="findme">
-            <span>ENCONTRE-ME EM:</span>
+            <span>{{ $t('FOOTER.FINDME') }}</span>
             <a href="https://github.com/Rhuan-Ribeiro" target="_blank"><i class="pi pi-github"></i></a>
             <a href="https://linkedin.com/in/rhuan-ribeiro" target="_blank"><i class="pi pi-linkedin"></i></a>
             <a href="mailto:rhuan.augusto.ribeiro@gmail.com" target="_blank"><i class="pi pi-envelope"></i></a>
@@ -14,7 +14,7 @@
         
         <div id="footer-copyright">
           <a href="https://www.cdprojektred.com/" target="_blank" ><img id="cd-projekt" src="/CDProjektRed.svg" alt=""></a>
-          <span>&#169 2024 Rhuan Ribeiro. Todos os direitos reservados. Este site foi desenvolvido como um exercício acadêmico, inspirado no design do Cyberpunk 2077. Os elementos visuais e estilísticos utilizados são de propriedade da CD PROJEKT S.A., e os direitos relacionados ao Cyberpunk, Cyberpunk 2077 e seus logotipos são marcas registradas da CD PROJEKT S.A. nos EUA e/ou em outros países. O uso destes elementos é exclusivo para fins educacionais e não tem intenção comercial.</span> 
+          <span>&#169 {{ $t('FOOTER.COPYRIGHT') }}</span> 
         </div>
       </div>
     </footer>
@@ -45,6 +45,7 @@
         color: var(--white);
         font-size: 1.5rem;
         font-weight: 700;
+        text-transform: uppercase;
       }
 
       a {

@@ -6,23 +6,23 @@
 <template>
   <main>
     <section id="intro">
-      <h1>Vicêncie a experiência definitiva de Cyberpunk 2077</h1>
+      <h1>{{ $t('HOME.TITLE') }}</h1>
     </section>
     <div id="bar"></div>
     <section id="news">
       <ul>
         <li></li>
       </ul>
-      <a href="">Mais Notícias</a>
+      <a href="">{{ $t('HOME.MORENEWS') }}</a>
     </section>
     <section id="about">
-      <h2>Te damos boas vindas ao futuro sombrio</h2>
-      <p class="mb-4">Explore a atmosfera futurista que remete ao icônico mundo de Cyberpunk 2077. Descubra as histórias fascinantes e desafios emocionantes na vibrante e perigosa Night City, enquanto desfruta de uma experiência de cassino inovadora e totalmente tematizada.</p>
+      <h2>{{ $t('HOME.WELCOME') }}</h2>
+      <p class="mb-4">{{ $t('HOME.ABOUT') }}</p>
       <div id="separator-top"></div>
       <img src="/casino.jpg" alt="">
       <div id="separator-bottom"></div>
-      <h2 class="mt-4">O Cassino da Distopia</h2>
-      <p>Mergulhe no cassino imersivo inspirado no universo de Cyberpunk 2077, onde o futuro se encontra com o entretenimento de uma maneira única! Este exercício acadêmico, desenvolvido exclusivamente para fins educacionais, <strong><u>não tem finalidade lucrativa.</u></strong></p>
+      <h2 class="mt-4">{{ $t('HOME.THEME') }}</h2>
+      <p>{{ $t('HOME.EXERCISE') }}, <strong><u>{{ $t('HOME.WARNING') }}</u></strong></p>
     </section>
     
   </main>
@@ -150,6 +150,7 @@
     font-weight: 400;
     line-height: 120%;
   }
+  
   #separator-top {
     width: 47.2916666667vw;
     height: 28px;

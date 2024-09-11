@@ -8,9 +8,9 @@
             <RouterLink to="/"><img src="https://www.cyberpunk.net/build/images/home8/logo-franchise-black-en@1x-567991b0.png"></RouterLink>
             
             <ul>
-                <li ><RouterLink to="/">Home</RouterLink></li>
-                <li><RouterLink to="/tokens">Tokens</RouterLink></li>
-                <li id="play-background"><RouterLink to="/slot-machine" id="play">Slot Machine</RouterLink></li>
+                <li ><RouterLink to="/">{{ $t('HEADER.HOME') }}</RouterLink></li>
+                <li><RouterLink to="/tokens">{{ $t('HEADER.TOKENS') }}</RouterLink></li>
+                <li id="play-background"><RouterLink to="/slot-machine" id="play">{{ $t('HEADER.SLOTMACHINE') }}</RouterLink></li>
             </ul>
         </nav>
     </header>
