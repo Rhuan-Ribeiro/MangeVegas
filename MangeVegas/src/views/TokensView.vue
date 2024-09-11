@@ -44,8 +44,8 @@
 
 <template>
     <main>
-        <section id="crypto-prices">
-            <div id="trade-container" class="flex flex-column justify-content-between">
+        <section id="crypto-prices" class="flex justify-content-around position-relative">
+            <div id="trade-container" class="flex flex-column justify-content-between align-items-center">
                 <h2 class="text-7xl">Trocar Tokens</h2>
                 <div class="flex flex-row justify-content-between align-items-center mb-4">
 
@@ -62,8 +62,11 @@
                     </div>
                 
                 </div>
-                <span>&#x26A0</span>
-                <button>Trocar</button>
+                
+                <div class="flex flex-row justify-content-center align-items-center">
+                    <span style="color: red; font-size: 1.2rem; font-weight: bold; margin-right: 1rem;">&#x26A0 Atenção: as trocas estão sujeitas a taxas de câmbio<br>cliques acidentais não serão reembolsados.</span>
+                    <button>Trocar</button>
+                </div>
             </div>
             <table>
                 <thead>
@@ -99,8 +102,8 @@
         </section>
         <section id="alert">
             <div id="separator-top"></div>
-            <h2>Te damos boas vindas ao futuro sombrio</h2>
-            <p class="mb-4">Explore a atmosfera futurista que remete ao icônico mundo de Cyberpunk 2077. Descubra as histórias fascinantes e desafios emocionantes na vibrante e perigosa Night City, enquanto desfruta de uma experiência de cassino inovadora e totalmente tematizada.</p>
+            <h2>O Futuro Tem Misericordia?</h2>
+            <p class="mb-4">O dinheiro apostado não pode ser reembolsado, o que seria um grande problema se este site não fosse apenas um exercício acadêmico. Mesmo assim, seus créditos podem se esgotar. Como eles não estão vinculados a um backend, você pode simplesmente atualizar a página.</p>
             <div id="separator-bottom"></div>
         </section>
         
@@ -109,11 +112,10 @@
 
 <style scoped lang="scss">
 #crypto-prices {
-    display: flex;
-    justify-content: space-between;
     position: relative;
     padding: 50px 10px 88px 10px;
     background-color: #000;
+    margin-top: 50px;
     
 
     #trade-container {
@@ -211,8 +213,33 @@
 }
 
 #alert {
-    height: 200px;
     background-color: var(--neon-yellow);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 46px 0;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        font-family: 'Refinery-25';
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 100%;
+    }
+
+    p {
+        max-width: 820px;
+        font-size: 22px;
+        font-style: normal;
+        font-family: BlenderProBook,sans-serif;
+        font-weight: 400;
+        line-height: 120%;
+    }
 
     #separator-top {
         width: 47.2916666667vw;
