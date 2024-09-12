@@ -2,6 +2,7 @@
     "HEADER": {
         "HOME": "Home",
         "TOKENS": "Tokens",
+        "LANGUAGES": "Languages",
         "SLOTMACHINE": "Slot Machine"
     },
     "FOOTER": {
@@ -14,7 +15,10 @@
         "WELCOME": "Welcome to the Dark Future",
         "ABOUT": "Explore the futuristic atmosphere reminiscent of the iconic world of Cyberpunk 2077. Discover the fascinating stories and exciting challenges in the vibrant and dangerous Night City, while enjoying an innovative and fully themed casino experience.",
         "THEME": "The Dystopian Casino",
-        "EXERCISE": "Dive into the immersive casino inspired by the Cyberpunk 2077 universe, where the future meets entertainment in a unique way! This academic exercise, developed exclusively for educational purposes,",
-        "WARNING": "is not for profit."
+        "EXERCISE": "Dive into the immersive casino inspired by the Cyberpunk 2077 universe, where the future meets entertainment in a unique way! This academic exercise, developed exclusively for educational purposes, <strong><u>is not for profit.</u></strong>"
+    },
+    "TOKENS": {
+        "TITLE": "Does the Future Have Mercy?",
+        "TIP": "The money wagered cannot be refunded, which would be a major issue if this site weren’t just an academic exercise. Even so, your credits may run out. Since they aren't tied to a backend, you can simply refresh the page."
     }
 }

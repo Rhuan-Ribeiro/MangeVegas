@@ -2,6 +2,7 @@
     "HEADER": {
         "HOME": "Home",
         "TOKENS": "Tokens",
+        "LANGUAGES": "Linguas",
         "SLOTMACHINE": "Slot Machine"
     },
     "FOOTER": {
@@ -14,7 +15,10 @@
         "WELCOME": "Te damos boas vindas ao futuro sombrio",
         "ABOUT": "Explore a atmosfera futurista que remete ao icônico mundo de Cyberpunk 2077. Descubra as histórias fascinantes e desafios emocionantes na vibrante e perigosa Night City, enquanto desfruta de uma experiência de cassino inovadora e totalmente tematizada.",
         "THEME": "O Cassino da Distopia",
-        "EXERCISE": "Mergulhe no cassino imersivo inspirado no universo de Cyberpunk 2077, onde o futuro se encontra com o entretenimento de uma maneira única! Este exercício acadêmico, desenvolvido exclusivamente para fins educacionais,",
-        "WARNING": "não tem finalidade lucrativa."
+        "EXERCISE": "Mergulhe no cassino imersivo inspirado no universo de Cyberpunk 2077, onde o futuro se encontra com o entretenimento de uma maneira única! Este exercício acadêmico, desenvolvido exclusivamente para fins educacionais, <strong><u>não tem finalidade lucrativa.</u></strong>"
+    },
+    "TOKENS": {
+        "TITLE": "O Futuro Tem Misericordia?",
+        "TIP": "O dinheiro apostado não pode ser reembolsado, o que seria um grande problema se este site não fosse apenas um exercício acadêmico. Mesmo assim, seus créditos podem se esgotar. Como eles não estão vinculados a um backend, você pode simplesmente atualizar a página."
     }
 }

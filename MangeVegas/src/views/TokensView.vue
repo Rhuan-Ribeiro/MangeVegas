@@ -2,6 +2,7 @@
     import { type Ref, ref, reactive } from 'vue';
     import { currency } from "@/models/Currency";
     import { getEthereum, getBitcoin, getSolana, getAvalanche } from "@/services/currency.service";
+    import ContentBlock from '@/components/ContentBlock.vue';
 
     const ethereum: Ref<currency> = ref();
     const bitcoin: Ref<currency> = ref();
@@ -103,8 +104,7 @@
         </section>
         <section id="alert">
             <div id="separator-top"></div>
-            <h2>O Futuro Tem Misericordia?</h2>
-            <p class="mb-4">O dinheiro apostado não pode ser reembolsado, o que seria um grande problema se este site não fosse apenas um exercício acadêmico. Mesmo assim, seus créditos podem se esgotar. Como eles não estão vinculados a um backend, você pode simplesmente atualizar a página.</p>
+            <ContentBlock :title="$t('TOKENS.TITLE')" :paragraph="$t('TOKENS.TIP')"/>
             <div id="separator-bottom"></div>
         </section>
         
@@ -222,25 +222,6 @@
     padding: 46px 0;
     justify-content: center;
     text-align: center;
-
-    h2 {
-        font-family: 'Refinery-25';
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 100%;
-    }
-
-    p {
-        max-width: 820px;
-        font-size: 22px;
-        font-style: normal;
-        font-family: BlenderProBook,sans-serif;
-        font-weight: 400;
-        line-height: 120%;
-    }
 
     #separator-top {
         width: 47.2916666667vw;

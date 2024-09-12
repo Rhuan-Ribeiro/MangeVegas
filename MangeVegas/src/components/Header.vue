@@ -10,6 +10,7 @@
             <ul>
                 <li ><RouterLink to="/">{{ $t('HEADER.HOME') }}</RouterLink></li>
                 <li><RouterLink to="/tokens">{{ $t('HEADER.TOKENS') }}</RouterLink></li>
+                <li id="lang">{{ $t('HEADER.LANGUAGES') }}</li>
                 <li id="play-background"><RouterLink to="/slot-machine" id="play">{{ $t('HEADER.SLOTMACHINE') }}</RouterLink></li>
             </ul>
         </nav>
@@ -42,24 +43,26 @@
                     padding: 8px 20px;
                     font-size: 1.5rem;
                     text-transform: uppercase;
+                    font-family: 'BlenderProBook', sans-serif;
+                    color: var(--white);
+                    font-weight: 400;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     a {
                         font-family: 'BlenderProBook', sans-serif;
                         color: var(--white);
-                        text-decoration: none;
                         font-weight: 400;
+                        cursor:pointer;
+                        text-decoration: none;
                     }
 
                     #play {
                         color: #000000;
                         font-weight: 700;
                     }
-
-                    a:hover {
-                        color:var(--black); 
-                        text-decoration:none; 
-                        cursor:pointer;
-                        
-                    }  
                 }
 
                 #play-background {
@@ -68,7 +71,37 @@
 
                 li:hover {
                     background-color: #fcee0a;
+
+                    a {
+                        color:var(--black);
+                    }
                 }
+
+                #lang {
+
+                    &:hover {
+                        color: #000;
+                    }
+                    
+                    &::after {
+                        box-sizing: inherit;
+                        border-left: 4px solid transparent;
+                        border-right: 4px solid transparent;
+                        border-top: 6px solid #fff;
+                        content: "";
+                        display: block;
+                        height: 6px;
+                        margin-left: 4px;
+                        position: relative;
+                        width: 8px;
+                        
+                    }
+
+                    &:hover::after {
+                        border-top-color: #000;
+                    }
+                }
+                
             } 
         }
     }

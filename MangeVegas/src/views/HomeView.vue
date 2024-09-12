@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  
+  import ContentBlock from '@/components/ContentBlock.vue';
 
 </script>
 
@@ -16,13 +16,11 @@
       <a href="">{{ $t('HOME.MORENEWS') }}</a>
     </section>
     <section id="about">
-      <h2>{{ $t('HOME.WELCOME') }}</h2>
-      <p class="mb-4">{{ $t('HOME.ABOUT') }}</p>
+      <ContentBlock :title="$t('HOME.WELCOME')" :paragraph="$t('HOME.ABOUT')"/>
       <div id="separator-top"></div>
       <img src="/casino.jpg" alt="">
       <div id="separator-bottom"></div>
-      <h2 class="mt-4">{{ $t('HOME.THEME') }}</h2>
-      <p>{{ $t('HOME.EXERCISE') }}, <strong><u>{{ $t('HOME.WARNING') }}</u></strong></p>
+      <ContentBlock class="mt-4" :title="$t('HOME.THEME')" :paragraph="$t('HOME.EXERCISE')"/>
     </section>
     
   </main>
@@ -131,25 +129,6 @@
   padding: 46px 0;
   justify-content: center;
   text-align: center;
-
-  h2 {
-    font-family: 'Refinery-25';
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 100%;
-  }
-
-  p {
-    max-width: 820px;
-    font-size: 22px;
-    font-style: normal;
-    font-family: BlenderProBook,sans-serif;
-    font-weight: 400;
-    line-height: 120%;
-  }
   
   #separator-top {
     width: 47.2916666667vw;
