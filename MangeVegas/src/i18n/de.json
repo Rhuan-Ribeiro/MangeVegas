@@ -1,0 +1,24 @@
+{
+    "HEADER": {
+        "HOME": "Startseite",
+        "TOKENS": "Token",
+        "LANGUAGES": "Sprachen",
+        "SLOTMACHINE": "Spielautomat"
+    },
+    "FOOTER": {
+        "FINDME": "Finde mich unter:",
+        "COPYRIGHT": "2024 Rhuan Ribeiro. Alle Rechte vorbehalten. Diese Website wurde als akademische Übung entwickelt, inspiriert vom Design von Cyberpunk 2077. Die verwendeten visuellen und stilistischen Elemente gehören CD PROJEKT S.A., und die Rechte an Cyberpunk, Cyberpunk 2077 und deren Logos sind Marken von CD PROJEKT S.A. in den USA und/oder anderen Ländern. Die Verwendung dieser Elemente dient ausschließlich Bildungszwecken und hat keinen kommerziellen Zweck."
+    },
+    "HOME": {
+        "TITLE": "Erlebe das Ultimative Cyberpunk 2077 Erlebnis",
+        "MORENEWS": "Mehr Nachrichten",
+        "WELCOME": "Willkommen in der Dunklen Zukunft",
+        "ABOUT": "Erkunde die futuristische Atmosphäre, die an die ikonische Welt von Cyberpunk 2077 erinnert. Entdecke die faszinierenden Geschichten und aufregenden Herausforderungen in der lebhaften und gefährlichen Night City, während du ein innovatives und vollständig thematisiertes Casino-Erlebnis genießt.",
+        "THEME": "Das Dystopische Casino",
+        "EXERCISE": "Tauche ein in das immersive Casino, inspiriert vom Cyberpunk 2077 Universum, wo die Zukunft auf einzigartige Weise auf Unterhaltung trifft! Diese akademische Übung, die ausschließlich zu Bildungszwecken entwickelt wurde, <strong><u>ist nicht gewinnorientiert.</u></strong>"
+    },
+    "TOKENS": {
+        "TITLE": "Hat die Zukunft Barmherzigkeit?",
+        "TIP": "Das gesetzte Geld kann nicht zurückerstattet werden, was ein großes Problem wäre, wenn diese Seite nicht nur eine akademische Übung wäre. Dennoch könnten deine Credits ausgehen. Da sie nicht an ein Backend gebunden sind, kannst du einfach die Seite aktualisieren."
+    }
+}

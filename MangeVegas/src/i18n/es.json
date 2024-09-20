@@ -1,0 +1,24 @@
+{
+    "HEADER": {
+        "HOME": "Inicio",
+        "TOKENS": "Fichas",
+        "LANGUAGES": "Idiomas",
+        "SLOTMACHINE": "Máquina Tragamonedas"
+    },
+    "FOOTER": {
+        "FINDME": "Encuéntrame en:",
+        "COPYRIGHT": "2024 Rhuan Ribeiro. Todos los derechos reservados. Este sitio fue desarrollado como un ejercicio académico, inspirado en el diseño de Cyberpunk 2077. Los elementos visuales y estilísticos utilizados son propiedad de CD PROJEKT S.A., y los derechos relacionados con Cyberpunk, Cyberpunk 2077 y sus logotipos son marcas registradas de CD PROJEKT S.A. en EE. UU. y/o en otros países. El uso de estos elementos es únicamente con fines educativos y no tiene intención comercial."
+    },
+    "HOME": {
+        "TITLE": "Experimenta la Última Experiencia de Cyberpunk 2077",
+        "MORENEWS": "Más Noticias",
+        "WELCOME": "Bienvenido al Futuro Oscuro",
+        "ABOUT": "Explora la atmósfera futurista que recuerda al icónico mundo de Cyberpunk 2077. Descubre las fascinantes historias y emocionantes desafíos en la vibrante y peligrosa Night City, mientras disfrutas de una experiencia de casino innovadora y completamente temática.",
+        "THEME": "El Casino Distópico",
+        "EXERCISE": "Sumérgete en el casino inmersivo inspirado en el universo de Cyberpunk 2077, donde el futuro se encuentra con el entretenimiento de una manera única. Este ejercicio académico, desarrollado exclusivamente para fines educativos, <strong><u>no es con fines de lucro.</u></strong>"
+    },
+    "TOKENS": {
+        "TITLE": "¿Tiene el Futuro Misericordia?",
+        "TIP": "El dinero apostado no puede ser reembolsado, lo que sería un gran problema si este sitio no fuera solo un ejercicio académico. Aun así, tus créditos pueden agotarse. Dado que no están vinculados a un backend, puedes simplemente actualizar la página."
+    }
+}
