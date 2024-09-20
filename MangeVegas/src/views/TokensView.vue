@@ -1,9 +1,10 @@
 <script setup lang="ts">
-    import { type Ref, ref, reactive } from 'vue';
+    import { type Ref, ref, reactive, computed } from 'vue';
     import { currency } from "@/models/Currency";
     import { getEthereum, getBitcoin, getSolana, getAvalanche } from "@/services/currency.service";
     import ContentBlock from '@/components/ContentBlock.vue';
 
+    // get coin values ​​from Gemini API
     const ethereum: Ref<currency> = ref();
     const bitcoin: Ref<currency> = ref();
     const solana: Ref<currency> = ref();
@@ -33,14 +34,17 @@
     })
     .catch(error=>console.error(error));
 
-    const arrowLeft = '&#8592';
-    const arrowRight = '&#8594';
+    // Change of direction of exchange
+    const isArrowRight = ref(true);
 
-    const arrow = ref();
-
-    const rotate = () => {
-        
+    const toggleArrow = () => {
+        isArrowRight.value = !isArrowRight.value;
     };
+
+    const EthereumTrade = computed(() => isArrowRight.value ? '1x' : '0.5x');
+    const MangeCoinTrade = computed(() => isArrowRight.value ? '2x' : '1x');
+
+
 
 </script>
 
@@ -52,20 +56,20 @@
                 <div class="flex flex-row justify-content-between align-items-center mb-4">
 
                     <div class="flex flex-row justify-content-center align-items-center">
-                        <img src="/ethereum.svg" alt="Ethereum icon" class="h-6rem">
-                        <span class="ml-2 text-6xl">Ethereum</span>
+                        <img src="/ethereum.svg" alt="Ethereum icon" class="h-6rem arrow">
+                        <span class="ml-2 text-6xl">{{ EthereumTrade }} Ethereum</span>
                     </div>
 
-                    <img @click="rotate()" src="/arrow.png" alt="" class="h-4rem m-4">
+                    <img src="/arrow.png" alt="" class="h-4rem m-4"  :class="{ 'rotate-180': !isArrowRight }" @click="toggleArrow">
 
                     <div class="flex flex-row justify-content-center align-items-center">
                         <img src="/m.png" alt="MangeCoin icon" class="h-6rem">
-                        <span class="ml-2 text-6xl">MangeCoin</span>
+                        <span class="ml-2 text-6xl">{{ MangeCoinTrade }} MangeCoin</span>
                     </div>
                 
                 </div>
                 
-                <div class="flex flex-row justify-content-center align-items-center">
+                <div class="flex flex-row justify-content-around align-items-center">
                     <span style="color: red; font-size: 1.2rem; font-weight: bold; margin-right: 1rem;">&#x26A0 Atenção: as trocas estão sujeitas a taxas de câmbio<br>cliques acidentais não serão reembolsados.</span>
                     <button>Trocar</button>
                 </div>
@@ -130,6 +134,17 @@
             text-align: center;
             font-size: 1.8rem;
         }
+
+        img {
+            transition: transform 0.5s ease;
+
+            
+        }
+
+        .rotate-180 {
+                transform: rotate(180deg); /* Rotação de 180 graus */
+        }
+        
 
         button {
             border-image: url(https://www.cyberpunk.net/build/images/cp-btn-yellow-fd1ca428.svg) 0 20 fill;
