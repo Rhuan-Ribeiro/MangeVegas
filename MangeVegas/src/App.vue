@@ -7,8 +7,7 @@ import 'primeicons/primeicons.css'
 
 <template>
   <div>
-    <!-- <Header/> -->
-    
+    <Header/>
 
     <main>
       <RouterView />

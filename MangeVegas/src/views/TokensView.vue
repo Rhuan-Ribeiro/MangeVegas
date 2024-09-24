@@ -3,6 +3,7 @@
     import { currency } from "@/models/Currency";
     import { getEthereum, getBitcoin, getSolana, getAvalanche } from "@/services/currency.service";
     import ContentBlock from '@/components/ContentBlock.vue';
+    import Button from '@/components/Button.vue';
 
     // get coin values ​​from Gemini API
     const ethereum: Ref<currency> = ref();
@@ -71,7 +72,7 @@
                 
                 <div class="flex flex-row justify-content-around align-items-center">
                     <span style="color: red; font-size: 1.2rem; font-weight: bold; margin-right: 1rem;">&#x26A0 Atenção: as trocas estão sujeitas a taxas de câmbio<br>cliques acidentais não serão reembolsados.</span>
-                    <button>Trocar</button>
+                    <Button text="Trocar"/>
                 </div>
             </div>
             <table>
@@ -143,34 +144,6 @@
 
         .rotate-180 {
                 transform: rotate(180deg); /* Rotação de 180 graus */
-        }
-        
-
-        button {
-            border-image: url(https://www.cyberpunk.net/build/images/cp-btn-yellow-fd1ca428.svg) 0 20 fill;
-            color: var(--neon-yellow);
-
-            background-color: #222;
-
-            align-items: center;
-            border-style: solid;
-            border-width: 0 20px;
-            cursor: pointer;
-            display: inline-flex;
-            height: 48px;
-            justify-content: center;
-            min-width: 232px;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            -webkit-user-select: none;
-            user-select: none;
-
-            font-family: 'BlenderProBold',sans-serif;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 110%;
         }
     }
     
