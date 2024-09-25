@@ -27,7 +27,7 @@
     #razor-bottom {
       transform: scaleY(-1);
       background-color: var(--neon-yellow);
-
+      width: 100vw;
     }
 
     #footer-content {
